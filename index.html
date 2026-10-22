@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Weather Platform - Melbourne Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body class="ai-traffic">
+    <div class="header">
+        <div class="logo">
+            <span class="logo-icon">🌧️</span>
+            <h1 class="logo-title">AI Weather Platform</h1>
+            <p class="logo-subtitle">Melbourne, Victoria - Real-time Monitoring</p>
+        </div>
+        <div class="ai-info">
+            <span class="ai-badge">🤖 AI Integration Active</span>
+            <span class="ai-status">Data Collection: <span id="ai-data">0</span> records/sec</span>
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <!-- Weather Overview -->
+        <div class="weather-section">
+            <h2 class="section-title">Current Weather</h2>
+            <div class="weather-grid">
+                <div class="weather-card">
+                    <h3 class="card-title">Temperature</h3>
+                    <div class="temperature-display">
+                        <span class="temp-value" id="temp">27°C</span>
+                        <span class="temp-unit">°C</span>
+                        <div class="temp-icon">🌡️</div>
+                    </div>
+                    <div class="weather-icon" id="weather-icon">☀️</div>
+                </div>
+                <div class="weather-card">
+                    <h3 class="card-title">Humidity</h3>
+                    <div class="humidity-display">
+                        <span class="humidity-value" id="humidity">37%</span>
+                        <span class="humidity-unit">%</span>
+                        <div class="humidity-icon">💧</div>
+                    </div>
+                    <div class="weather-icon" id="humidity-icon">🌧️</div>
+                </div>
+                <div class="weather-card">
+                    <h3 class="card-title">Wind</h3>
+                    <div class="wind-display">
+                        <span class="wind-value" id="wind">9.6 km/h</span>
+                        <span class="wind-unit">km/h</span>
+                        <div class="wind-icon">💨</div>
+                    </div>
+                    <div class="weather-icon" id="wind-icon">💨</div>
+                </div>
+                <div class="weather-card">
+                    <h3 class="card-title">Pressure</h3>
+                    <div class="pressure-display">
+                        <span class="pressure-value" id="pressure">1015 hPa</span>
+                        <span class="pressure-unit">hPa</span>
+                        <div class="pressure-icon">📊</div>
+                    </div>
+                    <div class="weather-icon" id="pressure-icon">📈</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Data Feed -->
+        <div class="ai-feed-section">
+            <h2 class="section-title">AI Data Feed</h2>
+            <div class="ai-feed-container">
+                <div class="ai-feed-item">
+                    <div class="ai-feed-header">
+                        <span class="ai-indicator">●</span>
+                        <span class="ai-status-text">Live Data</span>
+                    </div>
+                    <div class="ai-feed-content">
+                        <span class="ai-source">AI Traffic Node</span>
+                        <span class="ai-rate">Processing</span>
+                    </div>
+                </div>
+                <div class="ai-feed-item">
+                    <div class="ai-feed-header">
+                        <span class="ai-indicator">●</span>
+                        <span class="ai-status-text">Data Processing</span>
+                    </div>
+                    <div class="ai-feed-content">
+                        <span class="ai-source">Melbourne Station</span>
+                        <span class="ai-rate">✓ Analyzing</span>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">01/02</div>
+                        <div class="timeline-content">
+                            <span>AI Payment Integration</span>
+                            <span class="timeline-status">Active</span>
+                        </div>
+                        <div class="timeline-marker">02/01</div>
+                        <div class="timeline-content">
+                            <span>Performance Optimization</span>
+                            <span class="timeline-status">Active</span>
+                        </div>
+                        <div class="timeline-marker">02/15</div>
+                        <div class="timeline-content">
+                            <span>Frontend Updates</span>
+                            <span class="timeline-status">Active</span>
+                        </div>
+                        <div class="timeline-marker">03/01</div>
+                        <div class="timeline-content">
+                            <span>AI Traffic Monitoring</span>
+                            <span class="timeline-status">Active</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">02/01</div>
+                        <div class="timeline-content">
+                            <span>Performance Optimization</span>
+                            <span class="timeline-status">Active</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">02/15</div>
+                        <div class="timeline-content">
+                            <span>Frontend Updates</span>
+                            <span class="timeline-status">Active</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">03/01</div>
+                        <div class="timeline-content">
+                            <span>AI Traffic Monitoring</span>
+                            <span class="timeline-status">Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Metrics -->
+        <div class="metrics-section">
+            <h2 class="section-title">AI Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-label">AI Processing</span>
+                        <span class="metric-value">98.5%</span>
+                    </div>
+                    <div class="metric-progress">
+                        <div class="progress-bar" id="ai-progress">
+                            <div class="progress-fill" style="width: 98.5%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-label">Data Points</span>
+                        <span class="metric-value">423,891</span>
+                    </div>
+                    <div class="metric-progress">
+                        <div class="progress-bar" id="data-progress">
+                            <div class="progress-fill" style="width: 87.2%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-label">Payment Requests</span>
+                        <span class="metric-value">12,450</span>
+                    </div>
+                    <div class="metric-progress">
+                        <div class="progress-bar" id="payment-progress">
+                            <div class="progress-fill" style="width: 73.6%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-label">Daily Active</span>
+                        <span class="metric-value">892</span>
+                    </div>
+                    <div class="metric-progress">
+                        <div class="progress-bar" id="active-progress">
+                            <div class="progress-fill" style="width: 89.2%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; October 22, 2026 AI Weather Platform - Melbourne | <a href="https://github.com/bbgcl/AI-Weather" target="_blank">GitHub</a></p>
+    </footer>
+
+    </script>
+</body>
+</html>
